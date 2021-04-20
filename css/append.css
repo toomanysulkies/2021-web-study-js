@@ -1,0 +1,14 @@
+ button {padding:0.75em 1.25em; margin: 0.5em; border:1px solid burlywood;}
+ .wrapper { max-width: 800px; margin: auto;}
+.title {padding: 1em; font-size: 1.5em; text-align: center;}
+.btn-wrapper {text-align: center; margin-bottom: 1em;}
+
+.stage {border:2px solid orange; padding: 1em; }
+.stage>.box
+{width: 20px; height: 20px; background-color: palegoldenrod;
+	margin: 0 0.25em 0.25em 0;
+float: left; transition: all .35s;cursor:pointer;} 
+.stage>.box:hover
+{background-color: rgb(238, 170, 185);
+	transform: scale(1.2);
+}
