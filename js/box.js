@@ -45,7 +45,8 @@ function onMake() {
 		b = Math.floor(Math.random() * 256)
 
 		bg = 'background-color:rgb(' + r + ',' + g + ',' + b + ')';//색상에도 랜덤값을 주기 위해 변수를 주었다!
-		$('.stage').append('<div class="box" style=" ' + bg + ' "></div>') //스테이지의 박스를 어펜드 해주세요
+		// $('.stage').append('<div class="box" style=" ' + bg + ' ">' + i + '</div>') //스테이지의 박스를 어펜드 해주세요
+		$('.stage').prepend('<div class="box" style=" ' + bg + ' ">' + i + '</div>') //스테이지의 박스를 프리펜드 해주세요(먼저 나온 것이 뒤로)
 	}//bg를 선언하고 그것을 적용한 것! <div class="box" style="background-color:rgb(12,3,27)"></div> 와 같다
 }
 function onRemove() {

@@ -1,0 +1,115 @@
+<script>
+	/* 
+	1. 변수: variable, 변하는 수를 담는 공간
+	2. 변수에 들어갈 수 있는 값? - 자료형(Type)
+	- Any: String, Number, Boolean, undefined, null, Array, Object
+	- Primmitve(원시) type: String, Number, Boolean
+	- Reference(참조) type: Array, Object
+	*/
+	var a;
+	a = 1;
+	a = 2;
+
+	var b = 'booldook';
+	b = 'pooldook';
+
+	var c = true;
+	c = false;
+
+	var d;
+
+	var e = null;
+
+
+	console.log(a, b, c, d, e);
+
+
+	/* 
+	함수 : function, 동작(기능)을 기술하는 곳
+	1. 구조 : 인자(매개변수)가 있는 함수, 인자(매개변수)가 없는 함수, 리턴값이 있는 함수, 리턴값이 없는 함수
+	*/
+
+	// 인자x, 리턴값x
+	function f(/*여기 안에 있는게 인자*/) {
+		// 할일을 적는 곳
+		console.log('f함수 실행됨');
+	}
+	f();
+
+	// 인자x, 리턴값x
+	var g = function() {
+		console.log('g함수 실행됨');
+	}
+	g();
+
+	// 인자x, 리턴값x
+	function h() {
+		console.log('실행됨');
+		alert('실행됨!');
+	}
+	h();
+
+	// 인자o, 리턴값x
+	function i(str, n) {
+		console.log(str, n);
+		alert(str + ', ' + n);
+	}
+	// console.log( i('인자', 5) );
+
+	// 인자o, 리턴값o
+	function j(a, b) {
+		var c = a + b;
+		return c;
+	}
+	console.log( j(10, 20) );	// 30
+
+
+	function k(a, b, calc) {
+		if(calc === 'sum') {
+			console.log( a + b );
+		}
+		else if(calc === 'sub') {
+			console.log( a - b );
+		}
+		else {
+			console.log('저는 계산할 수가 없어요');
+		}
+	}
+
+	k(100, 200, 'sum')
+
+
+	/*
+	= 	대입연산자
+	== 	비교연산자
+	비교연산자
+	*/
+	var l = 5;
+	var m = 10;
+	l == m;		// false
+	l > m;		// false
+	l < m;		// true
+	l >= m;		// false
+	l <= m;		// true
+	l != m;		// true
+
+	var n = 5;
+	var o = '5';
+	n == o 		// true
+	n === o		// false
+
+
+	function p(n) {
+		if(n < 0) {
+			console.log('음수입니다.');
+		}
+		else if(n > 0) {
+			console.log('양수입니다.');
+		}
+		else {
+			console.log('0 입니다.');
+		}
+	}
+
+	p(10);
+</script>
