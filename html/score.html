@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>성적 관리 프로그램</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/score.css">
+	<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<h1 class="title">성적관리 프로그램</h1>
+		<form class="score-form" action="#" name="scoreForm" >
+			<input type="text" name="name" placeholder="이름" autofocus >
+			<input type="number" name="kor" placeholder="국어" min="0" max="100" step="1" >
+			<input type="number" name="eng" placeholder="영어" min="0" max="100" step="1" >
+			<input type="number" name="math" placeholder="수학" min="0" max="100" step="1" >
+		 <button id="bt-Sumit">등록</button>
+		</form>
+
+    <table class="score-table">
+			
+			<thread>
+				<tr>
+				<th>번호</th>
+				<th>이름</th>
+				<th>국어</th>
+				<th>영어</th>
+				<th>수학</th>
+				<th>총점</th>
+				<th>평균</th>
+				<th>석차</th>
+				<th>관리</th>
+			</tr>
+			</thread>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>홍길동</td>
+					<td>80점</td>
+					<td>90점</td>
+					<td>85점</td>
+					<td>255점</td>
+					<td>85점</td>
+					<td>2등</td>
+					<td>
+						<button class="bt-change">수정</button>
+						<button class="bt-remove">삭제</button>
+					</td>
+					
+				</tr>
+			</tbody>
+		</table>
+	
+</div>
+	
+
+
+
+
+
+
+
+
+	<script src="../js/score.js"></script>
+</body>
+</html>

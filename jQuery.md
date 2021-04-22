@@ -25,8 +25,7 @@
 ## 설명: 대상안의 뒤에 html을 넣는다.
 ``$('.jq').append('<div>')``
 ## return: $(대상)
-## $('대상').append('<div>hi</div>')
-## appendTo: ƒ (e)
+```$('대상').append('<div>hi</div>')appendTo: ƒ (e)```
 ## 설명: html을 대상안의 뒤에 넣는다.
 ## return: $(html)
 `` $('<div>hi</div>').appendTo('대상') attr: ƒ (e,t)``

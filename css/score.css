@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&family=Sunflower:wght@300&display=swap');
+/* font-family: 'Noto Serif KR', serif;
+    font-family: 'Sunflower', sans-serif; */
+
+html,body{
+font-family: 'Sunflower', sans-serif; font-weight: 300;	} 
+
+input, button {
+padding:0.75em 1.25em; 
+border:1px solid #6887a5;
+font-family: 'Sunflower', sans-serif; font-weight: 300;}
+
+button:hover{
+	background-color: #6886a5bd; color: #f9f9f9;
+}
+input  {
+padding: calc(0.75em - 2px) 1.25em; }
+
+.title{
+ font-family: 'Noto Serif KR', serif; font-weight: 500;}
+
+ .wrapper{
+	 max-width:1200px; margin:auto;}
+
+h1.title{
+	text-align: center; font-size: 2em; padding: 2em 0;}
+
+	.score-form {margin-bottom: 1.5em;}
+	.score-form input{width:90px;}
+	.score-form input[name='name'] {width: 120px;}
+
+	.score-table{width: 100%; text-align: center;}
+	.score-table th{border-bottom: 3px double #6887a5; padding: 0.75em 0;}
+	.score-table th:nth-child(1){width:5%}
+	.score-table th:nth-child(2){width:10%}
+	.score-table th:nth-child(3){width:10%}
+	.score-table th:nth-child(4){width:10%}
+	.score-table th:nth-child(5){width:10%}
+	.score-table th:nth-child(6){width:10%}
+	.score-table th:nth-child(7){width:10%}
+	.score-table th:nth-child(8){width:10%}
+	.score-table th:nth-child(9){width:15%}
+
+
+	.score-table td{border-bottom: 1px solid #ddd; padding: 0.75em 0;}
+	.score-table button {padding: 0.25em 0.5em;}
+  .score-table button.bt-change:hover {background-color: #244ab3;}
+  .score-table button.bt-remove:hover {background-color: #be7b3c;} 
