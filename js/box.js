@@ -1,7 +1,7 @@
 /************선수학습*********** */
 console.log(Math);
 var n = 10.55
-console.log(Math.floor(n)) //무조건 버림
+console.log(Math.floor(n)) //주어진 수 이하의 가장 큰 정수!
 console.log(Math.ceil(n)) //무조건 올림
 console.log(Math.round(n)) //무조건 반올림
 

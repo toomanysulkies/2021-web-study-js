@@ -19,38 +19,39 @@ input  {
 	padding: 1em; 
 	font-size: 1.5em; 
 	text-align: center;}
-
+.btn-wrapper{
+	text-align: center; margin-bottom: 2.5em;
+}
 .disp-wrapper {
 	text-align: center; 
 	margin-bottom: 1em;}
 
 .disp-wrapper>.display{
-	float: left; 
-	width: calc(100% - 130px);
-  text-align: center;}
+
+	text-align: center;
+  }
 
 .disp-wrapper>#bt-lotto{float: right;}
 
 .history-wrapper {
 	border:2px solid orange;
 	 padding: 1em; }
+.history-wrapper >.display{
+	width: 50%;
+float: left;
+margin: 0.5em 0; 
+text-align: center;}
 
-.ball{ 
-width: 40px; height: 40px; 
-border-radius: 50%;
-text-align: center;
-line-height: 37px;
-letter-spacing: -2px;
-padding-right: 2px;
-color: #fff;
-font-weight: bold;
-font-size: 1.25em;
-text-shadow: 0,0,4px rgb(0,0,0,0.4);
-display: inline-block;
-}
+.ball {width: 40px; height: 40px; border-radius: 50%; text-align: center; line-height: 37px; letter-spacing: -2px; padding-right: 2px; color: #fff; font-weight: bold; font-size: 1.25em; text-shadow: 0 0 4px rgba(0, 0, 0, .4); display: inline-block; margin-right: 4px;}
+.disp-wrapper.ball{width: 50px; height: 50px; line-height: 46px; font-size: 3,25em; }
 
 .ball.yellow{ background-image: radial-gradient( at 30% 30%, rgb(255, 249, 193) 3%,rgb(248, 225, 14)60%, rgb(231, 194, 29) 100%);}
 .ball.blue{ background-image: radial-gradient( at 30% 30%, rgb(62, 255, 239) 3%, rgb(23, 228, 194)60%, rgb(35, 202, 188) 100%);}
 .ball.red{ background-image: radial-gradient( at 30% 30%, rgb(255, 62, 62) 3%, rgb(199, 16, 16), rgb(221, 83, 83) 100%);}
 .ball.grey{ background-image: radial-gradient( at 30% 30%, rgb(223, 222, 213) 3%, rgb(82, 81, 75)60%, rgb(139, 139, 134) 100%);}
 .ball.green{ background-image: radial-gradient( at 30% 30%, rgb(62, 255, 94) 3%, rgb(98, 228, 23)60%, rgb(74, 202, 35) 100%);}
+
+
+@media (max-width: 768px) {
+	.history-wrapper > .display {width: 100%;}
+} 
