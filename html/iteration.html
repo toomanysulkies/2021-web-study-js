@@ -1,0 +1,61 @@
+<script>
+var users=[
+	{id:1,name:'홍길', age:30, gender:'M'},
+	{id:2,name:'홍길동', age:76, gender:'F'},
+	{id:3,name:'홍길동동', age:40, gender:'M'},
+	{id:4,name:'홍길남', age:15, gender:'F'},
+	{id:5,name:'홍길북', age:9, gender:'F'},
+	{id:6,name:'홍길이', age:45, gender:'M'},
+	{id:7,name:'홍길길', age:29, gender:'F'},
+]/**************** Iteration ******************/
+for(var i=0; i<users.length; i++) {
+	// console.log(users[i])
+}
+
+users.forEach(function(v, i) {
+	// console.log(v, i)
+})
+
+/**************** filtering ******************/
+var ageOver30 = []
+for(var i=0; i<users.length; i++) {
+	// console.log(users[i])
+	if(users[i].age >= 30) ageOver30.push(users[i])
+}
+// 데이터를 순회(iteration)하면서 
+// 조건에 따라 새로운 배열에 값을 넣거나(true) 말거나(false)하는 함수
+var ageOver30 = users.filter(function(v, i) {
+	return v.age >= 30
+})
+// console.log(ageOver30)
+
+
+var arr = ['A', 'B', 'C']
+arr.forEach(function(v, i) {
+	// console.log(v, i)
+})
+
+/**************** mapping ******************/
+var users2 = users.map(function(v, i) {
+	return { name: v.name, age: v.age }
+})
+// console.log(users2)
+
+
+/**************** 써먹어 보자 ******************/
+/* var rankUsers = users
+.sort(function(a, b) { return a.age - b.age })
+.map(function(v, i) { v.rank = i + 1; return v  })
+.sort(function(a, b) { return a.id - b.id })
+console.log(rankUsers) */
+users.sort(function(a, b) { return a.age - b.age }) // 오름차순 sort
+users.forEach(function(v, i) {
+	if(i == 0) v.rank = 1 
+	else {
+		if(users[i-1].age === v.age) v.rank = users[i-1].rank
+		else v.rank = i + 1
+	}
+})
+users.sort(function(a, b) { return a.id - b.id })
+console.log(users)
+</script>

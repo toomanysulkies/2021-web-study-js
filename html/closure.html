@@ -1,0 +1,53 @@
+<script>
+	/* 
+	if(조건) {
+	}
+	조건이 	true가 되는 경우: 문자, 0이외의 숫자
+	조건이 false가 되는 경우: null, undefined, 0
+	*/
+	var arr = [3, 7, 1, 6, 4, 4, 9, 23, 9]
+	var users = [
+		{id: 1, name: '홍길일', age: 15, gender: 'M'},
+		{id: 2, name: '홍길이', age: 25, gender: 'F'},
+		{id: 3, name: '홍길삼', age: 15, gender: 'M'},
+		{id: 4, name: '홍길사', age: 25, gender: 'F'},
+		{id: 5, name: '홍길오', age: 42, gender: 'F'},
+		{id: 6, name: '홍길육', age: 50, gender: 'M'},
+		{id: 7, name: '홍길칠', age: 25, gender: 'F'},
+	]
+	console.log( users[2].name )
+	console.log( users[2]['name'] )
+
+
+
+	function ascend(key) {
+		return function(a, b) {
+			/* if(key) return a[key] - b[key]
+			else return a - b */
+			return key ? a[key] - b[key] : a - b
+		}
+	}
+
+	function descend(key) {
+		return function(a, b) {
+			/* if(key) return b[key] - a[key]
+			else return b - a */
+			return key ? b[key] - a[key] : b - a
+		}
+	}
+
+	arr.sort(ascend())
+	console.log(arr)
+
+	users.sort(ascend('age'))
+	console.log(users)
+	
+</script>
+<!-- function sum(a, b, fn){     
+	fn (a + b)
+}
+sum(10,20,function(v){ //a=10,b=20,fn=v  sum의 값을 v에 넣어 함수 실행
+
+})
+
+// 30 -->
